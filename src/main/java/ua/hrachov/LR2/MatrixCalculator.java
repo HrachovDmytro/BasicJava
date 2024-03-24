@@ -1,4 +1,4 @@
-package org.example;
+package ua.hrachov.LR2;
 
 
 import java.util.Scanner;
