@@ -2,6 +2,7 @@ package ua.hrachov.LR3.model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 // Клас Department
 public class Department {
@@ -27,5 +28,18 @@ public class Department {
     // Метод для отримання назви кафедри
     public String getName() {
         return name;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Department that = (Department) o;
+        return Objects.equals(name, that.name) && Objects.equals(students, that.students);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, students);
     }
 }

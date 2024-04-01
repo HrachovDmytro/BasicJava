@@ -1,0 +1,51 @@
+{
+  "name": "Sample University",
+  "faculties": [
+    {
+      "name": "Faculty 1",
+      "departments": [
+        {
+          "name": "Department 1",
+          "students": [
+            {
+              "group": "CS101",
+              "name": "John",
+              "surname": "Doe",
+              "patronymic": "Smith",
+              "sex": "MALE"
+            }
+          ]
+        },
+        {
+          "name": "Department 2",
+          "students": [
+            {
+              "group": "ME101",
+              "name": "Alice",
+              "surname": "Johnson",
+              "patronymic": "Marshall",
+              "sex": "FEMALE"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Faculty 2",
+      "departments": [
+        {
+          "name": "Department 3",
+          "students": [
+            {
+              "group": "CE101",
+              "name": "Bob",
+              "surname": "Smith",
+              "patronymic": "Brown",
+              "sex": "MALE"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

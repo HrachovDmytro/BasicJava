@@ -3,11 +3,20 @@ package ua.hrachov.LR3;
 import ua.hrachov.LR3.model.*;
 import ua.hrachov.LR3.controller.*;
 
+import java.io.IOException;
+
 public class Run {
     public static void main(String[] args) {
         // Створюємо університет
         University university = createTypicalUniversity();
 
+        // Зберігаємо університет у файл JSON
+        try {
+            JsonManager.saveUniversityToJson(university);
+            System.out.println("Університет був успішно збережений у файл universityJson.txt.");
+        } catch (IOException e) {
+            System.err.println("Помилка при збереженні університету у файл: " + e.getMessage());
+        }
         // Виводимо інформацію про університет
         displayUniversityInfo(university);
     }
@@ -68,4 +77,6 @@ public class Run {
             }
         }
     }
+    //LR4
+
 }
